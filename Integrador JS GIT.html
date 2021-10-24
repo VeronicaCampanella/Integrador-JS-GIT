@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actividad Integradora Javascript Unidad 1</title>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   <link href="Integrador JS GIT CSS.css" rel="stylesheet">
+   <script lang="Javascript" src="JS GIT.js"> </script>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse col-5">
+                  <span class="navbar-text">
+                    <p style="color: white; font-size: large;">Conf Bs As </p>
+                  </span>
+              </div>
+              <div class="collapse navbar-collapse col-7" id="navbarText">
+                <ul class="navbar-nav me-auto" style="justify-content: flex-end;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Los oradores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">El lugar y la fecha</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Convviertete en orador</a>
+
+                  </li>
+                </ul>
+                <span class="navbar-text">
+                  <p style="color:darkgreen">Comprar Tickets </p>
+                </span>
+              </div>
+            </div>
+          </nav>
+          <br>
+
+
+
+
+          <div class="row row-cols-1 row-cols-md-3 g-4; margen">
+              <div class="col" id="Estudiante">
+                  <div class="card border-info mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h1 class="card-title" style="text-align: center;">Estudiante</h1>
+                         <p class="card-text" style="text-align: center;">Tienen un descuento de</p>
+                         <h3 class="card-text" style="text-align: center;">80%</h3>
+                        <p class="card-text" style="text-align: center; color: gray;">*presentar documentacion</p>
+                    </div>
+                </div>
+             </div> 
+             <div >
+                <div class="col" id="Trainee">
+                    <div class="card border-color mb-3" style="max-width: 18rem; border-color: green;">
+                        <div class="card-body">
+                          <h1 class="card-title" style="text-align: center;">Trainee</h1>
+                          <p class="card-text" style="text-align: center;">Tienen un descuento de</p>
+                          <h3 class="card-text" style="text-align: center;">50%</h3>
+                          <p class="card-text" style="text-align: center;color: gray;">*presentar documentacion</p>
+                        </div>
+                      </div>
+
+                </div>
+             </div>
+             <div >
+                <div class="col" id="Junior">
+                    <div class="card border-color mb-3" style="max-width: 18rem; border-color:orange;">
+                        <div class="card-body">
+                          <h1 class="card-title" style="text-align: center;">Junior</h1>
+                          <p class="card-text" style="text-align: center;">Tienen un descuento de</p>
+                          <h3 class="card-text" style="text-align: center;">15%</h3>
+                          <p class="card-text" style="text-align: center;color: gray;">*presentar documentacion</p>
+                        </div>
+                      </div>
+                    </div>
+             </div>
+          </div>
+          
+          <h6 style="text-align: center">VENTA</h6>
+          <H1 style="text-align: center">VALOR DE TICKET $200</H1>
+
+          <div class="conteiner; margen">
+            <div class="row justify-content-center">
+                    <span class="col-md-6" >
+                        <input type="text" class="form-control" id="Nombre" placeholder="Nombre" >
+                    </span>
+                    <span class="col-md-6">
+                        <input type="text" class="form-control" id="Apellido" placeholder="Apellido" >
+                    </span>
+                
+            </div>
+            <br>
+            <input type="text" class="form-control" id="Correo" placeholder="Correo" >
+            <br>
+            <div class="row justify-content-center">
+                <span class="col-md-6" >
+                    <label for="Cantidad" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" id="cantidad" placeholder="Cantidad" >
+                </span>
+                <span class="col-md-6">
+                    <label for="Categoría" class="form-label">Categoría</label>
+                    <select class="form-select" id="categoria" required="">
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trainee</option>
+                        <option value="3">Junior</option>
+                      </select>
+                </span>
+            
+            </div>
+          </div>
+          <br>
+          <div class="alert alert-primary ; margen" role="alert" >
+            Total a pagar: $ 
+            <input type="text" id="Total">
+          </div>
+          <br>
+          <div class="conteiner; margen">
+            <div class="row justify-content-center">
+                <span class="col-md-6" >
+                    <input class="form-control" type="submit" value="Borrar" style="background-color: yellowgreen; color:white;" >
+                </span>
+                <span class="col-md-6" >
+                    <button class="form-control" type="button" onclick= "Precio();" style="background-color: yellowgreen; color:white;" >Resumen</button> 
+                </span>
+            </div>
+          </div>
+        
+          <br>
+
+
+    <footer class="py-3 my-4" style="background-color: rgb(15, 12, 59);">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">Preguntas Frecuentes</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">Conáactanos</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">Prensa</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">Conferencias</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">Términos y condiciones</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">Privacidad</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">estudiantes</a></li>
+    </ul>
+  </footer>
+          
+</body>
